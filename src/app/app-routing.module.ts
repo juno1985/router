@@ -9,7 +9,8 @@ const routes: Routes = [
    * path: url
    * component: 路由组件
    */
-  {path:'' , component: HomeComponent},
+  {path:'', redirectTo:'home', pathMatch:'full'},
+  {path:'home' , component: HomeComponent},
   {path:'product/:id', component: ProductComponent},
   /**404一定放在路由配置最后,以上都找不到才会路由到它 */
   {path: '**', component: Code404Component}
