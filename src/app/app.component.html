@@ -5,7 +5,7 @@
 
 <!-- 绑定事件会触发toProductDetails函数 -->
 <input type="button" value="商品详情" (click)="toProductDetails()">
-<a [routerLink]="[{outlets:{aux:'chat'}}]">開始聊天</a>
+<a [routerLink]="[{outlets:{primary:'home',aux:'chat'}}]">開始聊天</a>
 <a [routerLink]="[{outlets:{aux:null}}]">結束聊天</a>
 <br>
 <router-outlet></router-outlet>
