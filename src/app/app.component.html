@@ -1,6 +1,7 @@
 
 <a  [routerLink]="['/']">主页</a>
-<a [routerLink]="['/product']">商品详情</a>
+<!-- 传递参数id=1 -->
+<a [routerLink]="['/product']" [queryParams]="{id: 1}">商品详情</a>
 
 <!-- 绑定事件会触发toProductDetails函数 -->
 <input type="button" value="商品详情" (click)="toProductDetails()">
