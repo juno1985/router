@@ -6,3 +6,7 @@
   商品id是:{{productId}}
 
 </p>
+<!-- 注意是./而不是/,否则会转到主路由 -->
+<a [routerLink]="['./']">商品描述</a>
+<a [routerLink]="['seller',99]">销售员信息</a>
+<router-outlet></router-outlet>
